@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/7a203bdce1314c0794fa82d8a0f80090/artifacts
+end_time: 1683832698576
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 7a203bdce1314c0794fa82d8a0f80090
+run_uuid: 7a203bdce1314c0794fa82d8a0f80090
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1683832686299
+status: 4
+tags: []
+user_id: hime_chan

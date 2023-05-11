@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8152c1308a50425e9c92cbb92e49bacc/artifacts
+end_time: 1683828390356
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8152c1308a50425e9c92cbb92e49bacc
+run_name: rumbling-asp-916
+run_uuid: 8152c1308a50425e9c92cbb92e49bacc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1683828388938
+status: 4
+tags: []
+user_id: hime_chan
