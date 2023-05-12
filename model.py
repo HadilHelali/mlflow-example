@@ -1,15 +1,11 @@
-import numpy as np
 import sys
 import os
+
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from keras.layers import Conv2D, MaxPooling2D
-from keras.utils import plot_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dropout, Flatten, Dense
-from tensorflow.keras import applications
-from tensorflow.keras.callbacks import CSVLogger
-from tqdm.keras import TqdmCallback
 
 print("Import successful!")
 
@@ -63,4 +59,4 @@ history = neuralnetwork_cnn.fit_generator(
     callbacks=[es, ckpt, rlp], epochs=20,
 )
 
-# plot_model(neuralnetwork_cnn, show_shapes=True)  # just learned this nice new thing
+neuralnetwork_cnn.save_weights("model/model.h5")
