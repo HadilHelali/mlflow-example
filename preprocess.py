@@ -1,83 +1,101 @@
 import mlflow
-import os
+import numpy as np
 import pandas as pd
-from sklearn import preprocessing
+import cv2
+import os
+from PIL import Image
+from io import BytesIO
+from PIL import Image
+import svglib.svglib as svglib
+import pickle
 
-from utils import dummify_dataset
+
+
+
+
+# Define constants
+IMG_SIZE = 100
+
+# Define preprocessing functions
+def preprocess_image(img_path):
+    img = cv2.imread(img_path, cv2.IMREAD_COLOR)
+    ## resizing the image
+    img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
+    ## converting the image's color space to Gray scale
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    ## normalizing the data
+    img = img.astype(np.float32) / 255.0
+    return img
+
+
+def preprocess_label(label):
+    return label
+
+# Define data loading function
+def load_data():
+    data = []
+    labels = []
+    for subdir, _, files in os.walk('data/raw/PokemonData'):
+        for file in files:
+            file_extension = file.split('.')[-1].lower()
+            if(file_extension == "jpg" or file_extension == "png" or file_extension == "jpeg"):
+                img_path = os.path.join(subdir, file)
+                label = os.path.basename(subdir)
+
+                print(img_path + " : " + label)
+                # preprocessing image + label
+                data.append(preprocess_image(img_path))
+                labels.append(preprocess_label(label))
+    return np.array(data), np.array(labels)
+
+# Define function to add noise to images
+def add_noise(images, std_dev):
+    print("--------- here we go we're adding some noise -----------")
+    noise = np.random.normal(loc=0.0, scale=std_dev, size=images.shape)
+    noisy_images = images + noise
+    return np.clip(noisy_images, 0.0, 1.0)
+
+
+# Define function to remove background from images
+def remove_background(images):
+    print("----- get started to remove the background -----")
+    gray_images = images
+    _, mask = cv2.threshold(gray_images, 10, 255, cv2.THRESH_BINARY)
+    masked_images = cv2.bitwise_and(images, mask)
+    return masked_images
+
+# Define function to simulate performance degradation
+def simulate_degradation(images, prob):
+    degraded_images = np.copy(images)
+    num_pixels = images.shape[1] * images.shape[2]
+    for i in range(images.shape[0]):
+        pixels_to_degrade = np.random.choice(num_pixels, size=int(prob*num_pixels), replace=False)
+        degraded_images[i, pixels_to_degrade // images.shape[1], pixels_to_degrade % images.shape[1], :] = 0.0
+    return degraded_images
 
 if __name__ == "__main__":
 
     with mlflow.start_run(run_name="load_raw_data") as run:
-        
+
         mlflow.set_tag("mlflow.runName", "load_raw_data")
-        # Read the data csv file
-        data_path = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "data/raw/hour.csv"
-        )
-        # load input data into pandas dataframe
-        bikes = pd.read_csv(data_path)
 
-        ##############################
-        #     Feature Engineering
-        ##############################
-        date = pd.DatetimeIndex(bikes["dteday"])
+        # load data and labels
+        data, labels = load_data()
 
-        bikes["year"] = date.year
+        data = remove_background(data)
+        data = add_noise(data,0.1)
 
-        bikes["dayofweek"] = date.dayofweek
+        data = list(zip(data, labels))
 
-        bikes["year_season"] = bikes["year"] + bikes["season"] / 10
+        # `data` is a list of tuples containing the processed images and their labels
+        # [(image1, label1), (image2, label2), ...]
+        with open('data/processed/images.pickle', 'wb') as f:
+            pickle.dump(data, f)
 
-        bikes["hour_workingday_casual"] = bikes[["hr", "workingday"]].apply(
-            lambda x: int(10 <= x["hr"] <= 19), axis=1
-        )
 
-        bikes["hour_workingday_registered"] = bikes[["hr",
-                                                     "workingday"]].apply(
-            lambda x: int(
-                (
-                 x["workingday"] == 1 and (x["hr"] == 8 or 17 <= x["hr"] <= 18)
-                )
-                or (x["workingday"] == 0 and 10 <= x["hr"] <= 19)
-            ),
-            axis=1,
-        )
 
-        by_season = bikes.groupby("year_season")[["cnt"]].median()
-        by_season.columns = ["count_season"]
+#         with open('data.pickle', 'rb') as f:
+#             data = pickle.load(f)
 
-        bikes = bikes.join(by_season, on="year_season")
+        print(data[0])
 
-        # One-Hot-Encoding
-        columns_to_dummify = ["season", "weathersit", "mnth"]
-        for column in columns_to_dummify:
-            bikes = dummify_dataset(bikes, column)
-
-        # Normalize features - scale
-        numerical_features = ["temp", "atemp", "hum", "windspeed", "hr"]
-        bikes.loc[:, numerical_features] = preprocessing.scale(
-            bikes.loc[:, numerical_features]
-        )
-
-        # remove unused columns
-        bikes.drop(columns=["instant", "dteday", "registered", "casual"],
-                   inplace=True)
-
-        # use better column names
-        bikes.rename(
-            columns={
-                "yr": "year",
-                "mnth": "month",
-                "hr": "hour_of_day",
-                "holiday": "is_holiday",
-                "workingday": "is_workingday",
-                "weathersit": "weather_situation",
-                "temp": "temperature",
-                "atemp": "feels_like_temperature",
-                "hum": "humidity",
-                "cnt": "rented_bikes",
-            },
-            inplace=True,
-        )
-
-        bikes.to_csv("./data/processed/data_preprocessed.csv", index=False)

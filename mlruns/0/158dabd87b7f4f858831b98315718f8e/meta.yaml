@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/158dabd87b7f4f858831b98315718f8e/artifacts
+end_time: 1683886393246
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 158dabd87b7f4f858831b98315718f8e
+run_name: load_raw_data
+run_uuid: 158dabd87b7f4f858831b98315718f8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1683886393185
+status: 4
+tags: []
+user_id: Amal Sammari
