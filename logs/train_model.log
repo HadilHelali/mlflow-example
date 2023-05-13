@@ -1,0 +1,1012 @@
+__main__ - ERROR - 2023-05-11 18:54:49,751 - Failed to run workflow due to error:
+Run (ID '1e6dcd7e7f414417801d84347a54cd51') failed
+__main__ - ERROR - 2023-05-11 18:54:49,752 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '1e6dcd7e7f414417801d84347a54cd51') failed
+
+__main__ - ERROR - 2023-05-11 18:55:33,020 - Failed to run workflow due to error:
+Run (ID 'a1f10bee84cb4489ba99270ebf67b400') failed
+__main__ - ERROR - 2023-05-11 18:55:33,022 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'a1f10bee84cb4489ba99270ebf67b400') failed
+
+__main__ - ERROR - 2023-05-11 19:00:15,304 - Failed to run workflow due to error:
+Run (ID 'e8dd5ec5feaf4ef6be69beb14ab02023') failed
+__main__ - ERROR - 2023-05-11 19:00:15,305 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'e8dd5ec5feaf4ef6be69beb14ab02023') failed
+
+__main__ - ERROR - 2023-05-11 19:25:33,366 - Failed to run workflow due to error:
+Run (ID 'e8c583e4f1044baf84b5cab1f0937a9a') failed
+__main__ - ERROR - 2023-05-11 19:25:33,367 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'e8c583e4f1044baf84b5cab1f0937a9a') failed
+
+__main__ - ERROR - 2023-05-11 19:29:29,376 - Failed to run workflow due to error:
+Run (ID 'f6505e9d75624b25b045e90954a5e3e8') failed
+__main__ - ERROR - 2023-05-11 19:29:29,377 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'f6505e9d75624b25b045e90954a5e3e8') failed
+
+__main__ - ERROR - 2023-05-11 19:33:45,224 - Failed to run workflow due to error:
+Run (ID '37213ca418e14890a08fb60ace9948ed') failed
+__main__ - ERROR - 2023-05-11 19:33:45,225 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '37213ca418e14890a08fb60ace9948ed') failed
+
+__main__ - ERROR - 2023-05-11 19:37:08,733 - Failed to run workflow due to error:
+Run (ID '39a06fd37edc49e79b20da639dc4b07a') failed
+__main__ - ERROR - 2023-05-11 19:37:08,734 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '39a06fd37edc49e79b20da639dc4b07a') failed
+
+__main__ - ERROR - 2023-05-11 19:46:00,350 - Failed to run workflow due to error:
+Run (ID '03f5d9e5261a417e8f99750795fe3e1e') failed
+__main__ - ERROR - 2023-05-11 19:46:00,351 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '03f5d9e5261a417e8f99750795fe3e1e') failed
+
+__main__ - ERROR - 2023-05-11 19:47:01,856 - Failed to run workflow due to error:
+Run (ID '79269d8f93b546e4bf6770b630d86af9') failed
+__main__ - ERROR - 2023-05-11 19:47:01,857 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '79269d8f93b546e4bf6770b630d86af9') failed
+
+__main__ - ERROR - 2023-05-11 19:57:30,009 - Failed to run workflow due to error:
+Run (ID 'fc9b953b749141ccb8a8a47f9e770e07') failed
+__main__ - ERROR - 2023-05-11 19:57:30,010 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'fc9b953b749141ccb8a8a47f9e770e07') failed
+
+__main__ - ERROR - 2023-05-11 20:11:47,925 - Failed to run workflow due to error:
+Run (ID 'c56f0fbdeac44ec696582fc24846373e') failed
+__main__ - ERROR - 2023-05-11 20:11:47,926 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'c56f0fbdeac44ec696582fc24846373e') failed
+
+__main__ - ERROR - 2023-05-11 20:17:01,649 - Failed to run workflow due to error:
+Run (ID 'c21fc9bec3ea489cb36194aca0bafa81') failed
+__main__ - ERROR - 2023-05-11 20:17:01,653 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'c21fc9bec3ea489cb36194aca0bafa81') failed
+
+__main__ - ERROR - 2023-05-11 20:18:18,585 - Failed to run workflow due to error:
+Run (ID '7a203bdce1314c0794fa82d8a0f80090') failed
+__main__ - ERROR - 2023-05-11 20:18:18,588 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-8830a24604b1d4931c87ead3d0771ed845a03771/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '7a203bdce1314c0794fa82d8a0f80090') failed
+
+__main__ - ERROR - 2023-05-12 22:10:29,991 - Failed to run workflow due to error:
+Run (ID '2237194733524429a5d30949a24bfa5f') failed
+__main__ - ERROR - 2023-05-12 22:10:29,993 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("load_raw_data")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '2237194733524429a5d30949a24bfa5f') failed
+
+__main__ - ERROR - 2023-05-12 22:11:39,787 - Failed to run workflow due to error:
+Run (ID '49f01be96a0f4caba5862b481b681ea3') failed
+__main__ - ERROR - 2023-05-12 22:11:39,788 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("load_raw_data")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '49f01be96a0f4caba5862b481b681ea3') failed
+
+__main__ - ERROR - 2023-05-12 22:12:20,429 - Failed to run workflow due to error:
+Run (ID 'b9876da3a3394d0f8c2c1a492dfdffe2') failed
+__main__ - ERROR - 2023-05-12 22:12:20,430 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("load_raw_data")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-3fb4822a88a1cc0c764ad97c7b05b7ad2c7b9f89/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'b9876da3a3394d0f8c2c1a492dfdffe2') failed
+
+__main__ - ERROR - 2023-05-12 22:19:18,459 - Failed to run workflow due to error:
+Run (ID 'cc0f7b5db2d142268057fff8b975efd8') failed
+__main__ - ERROR - 2023-05-12 22:19:18,461 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'cc0f7b5db2d142268057fff8b975efd8') failed
+
+__main__ - ERROR - 2023-05-12 23:07:11,671 - Failed to run workflow due to error:
+Run (ID '970025189bdb4a1aa7f8e8c3fe1579cd') failed
+__main__ - ERROR - 2023-05-12 23:07:11,674 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '970025189bdb4a1aa7f8e8c3fe1579cd') failed
+
+__main__ - ERROR - 2023-05-12 23:19:07,528 - Failed to run workflow due to error:
+Run (ID 'f922423f806742969a9e2fa8f895aa40') failed
+__main__ - ERROR - 2023-05-12 23:19:07,530 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'f922423f806742969a9e2fa8f895aa40') failed
+
+__main__ - ERROR - 2023-05-12 23:53:31,715 - Failed to run workflow due to error:
+Run (ID '69d47c0af2524c56ae379c3a512bf9f7') failed
+__main__ - ERROR - 2023-05-12 23:53:31,716 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '69d47c0af2524c56ae379c3a512bf9f7') failed
+
+__main__ - ERROR - 2023-05-13 00:00:48,722 - Failed to run workflow due to error:
+Run (ID 'a8d17629bd954cb490a5c2d7306edd28') failed
+__main__ - ERROR - 2023-05-13 00:00:48,724 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'a8d17629bd954cb490a5c2d7306edd28') failed
+
+__main__ - ERROR - 2023-05-13 00:13:35,767 - Failed to run workflow due to error:
+Run (ID 'e4a062790b6a440b8d17e5c4f7966091') failed
+__main__ - ERROR - 2023-05-13 00:13:35,769 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'e4a062790b6a440b8d17e5c4f7966091') failed
+
+__main__ - ERROR - 2023-05-13 00:25:26,179 - Failed to run workflow due to error:
+Run (ID '89ce9020901a40f89df0ae4dbcd13080') failed
+__main__ - ERROR - 2023-05-13 00:25:26,181 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '89ce9020901a40f89df0ae4dbcd13080') failed
+
+__main__ - ERROR - 2023-05-13 00:37:06,482 - Failed to run workflow due to error:
+Run (ID 'a41bf16bbf4f4ce2b096ed8f601f7fbd') failed
+__main__ - ERROR - 2023-05-13 00:37:06,483 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'a41bf16bbf4f4ce2b096ed8f601f7fbd') failed
+
+__main__ - ERROR - 2023-05-13 00:44:34,734 - Failed to run workflow due to error:
+Run (ID 'bbb05a72ae85467cb5c7851a7a406f8b') failed
+__main__ - ERROR - 2023-05-13 00:44:34,736 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'bbb05a72ae85467cb5c7851a7a406f8b') failed
+
+__main__ - ERROR - 2023-05-13 00:50:18,385 - Failed to run workflow due to error:
+Run (ID '193ec0ff101e438fa02418042e6cfab2') failed
+__main__ - ERROR - 2023-05-13 00:50:18,387 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '193ec0ff101e438fa02418042e6cfab2') failed
+
+__main__ - ERROR - 2023-05-13 01:04:38,003 - Failed to run workflow due to error:
+Run (ID '5a23a481badf46829bbec2b052d2f2df') failed
+__main__ - ERROR - 2023-05-13 01:04:38,005 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-dc50834b78f50f32478ac3d10765af4942c14c29/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '5a23a481badf46829bbec2b052d2f2df') failed
+
+__main__ - ERROR - 2023-05-13 01:35:20,096 - Failed to run workflow due to error:
+Run (ID '77cb9d8408eb4dde9bfa112b74382ea3') failed
+__main__ - ERROR - 2023-05-13 01:35:20,097 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '77cb9d8408eb4dde9bfa112b74382ea3') failed
+
+__main__ - ERROR - 2023-05-13 01:41:49,771 - Failed to run workflow due to error:
+Run (ID 'f6438044b8594aed9f0b2c2193209957') failed
+__main__ - ERROR - 2023-05-13 01:41:49,773 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'f6438044b8594aed9f0b2c2193209957') failed
+
+__main__ - ERROR - 2023-05-13 01:48:06,223 - Failed to run workflow due to error:
+Run (ID 'b2da3cafe8c84885bd10d98e707dfd5a') failed
+__main__ - ERROR - 2023-05-13 01:48:06,230 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'b2da3cafe8c84885bd10d98e707dfd5a') failed
+
+__main__ - ERROR - 2023-05-13 01:53:51,450 - Failed to run workflow due to error:
+Run (ID '3a8e8c7692904c68ab17d51771a2089b') failed
+__main__ - ERROR - 2023-05-13 01:53:51,452 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '3a8e8c7692904c68ab17d51771a2089b') failed
+
+__main__ - ERROR - 2023-05-13 02:07:54,913 - Failed to run workflow due to error:
+Run (ID '9041d877fbd6429ba9913318d5383c46') failed
+__main__ - ERROR - 2023-05-13 02:07:54,915 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '9041d877fbd6429ba9913318d5383c46') failed
+
+__main__ - ERROR - 2023-05-13 02:18:28,974 - Failed to run workflow due to error:
+Run (ID 'dc024e47611148968d10a9a988afc2ac') failed
+__main__ - ERROR - 2023-05-13 02:18:28,976 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'dc024e47611148968d10a9a988afc2ac') failed
+
+__main__ - ERROR - 2023-05-13 02:28:13,281 - Failed to run workflow due to error:
+Run (ID '44183a13a27e4b0681e4a9068612c96a') failed
+__main__ - ERROR - 2023-05-13 02:28:13,288 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("load_raw_data")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '44183a13a27e4b0681e4a9068612c96a') failed
+
+__main__ - ERROR - 2023-05-13 02:32:55,642 - Failed to run workflow due to error:
+Run (ID '10368767a6a4436b9cb5ae8417f85909') failed
+__main__ - ERROR - 2023-05-13 02:32:55,643 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("load_raw_data")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '10368767a6a4436b9cb5ae8417f85909') failed
+
+__main__ - ERROR - 2023-05-13 02:40:57,274 - Failed to run workflow due to error:
+Run (ID '847dc10f0d2041738cc51afaa05b92d7') failed
+__main__ - ERROR - 2023-05-13 02:40:57,275 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '847dc10f0d2041738cc51afaa05b92d7') failed
+
+__main__ - ERROR - 2023-05-13 02:48:22,449 - Failed to run workflow due to error:
+Run (ID '51c53037a4d54da7a3c76a335ce424a0') failed
+__main__ - ERROR - 2023-05-13 02:48:22,450 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '51c53037a4d54da7a3c76a335ce424a0') failed
+
+__main__ - ERROR - 2023-05-13 03:09:44,832 - Failed to run workflow due to error:
+Run (ID '4cf89bb207e64ae8b241ac447dc1e137') failed
+__main__ - ERROR - 2023-05-13 03:09:44,835 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-5022600c91f87e588c051ffe52c0b081c35d8020/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '4cf89bb207e64ae8b241ac447dc1e137') failed
+
+__main__ - ERROR - 2023-05-13 03:20:22,840 - Failed to run workflow due to error:
+Run (ID 'c573ca744f424ee99961f4e65e09b05c') failed
+__main__ - ERROR - 2023-05-13 03:20:22,843 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'c573ca744f424ee99961f4e65e09b05c') failed
+
+__main__ - ERROR - 2023-05-13 04:06:07,698 - Failed to run workflow due to error:
+Run (ID 'aa2532dc2d74438fb2f04a7fb66d5f02') failed
+__main__ - ERROR - 2023-05-13 04:06:07,700 - Traceback (most recent call last):
+  File "main.py", line 41, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 27, in workflow
+    _run("train", {"learning_rate": 0.1, "max_depth": 5})
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID 'aa2532dc2d74438fb2f04a7fb66d5f02') failed
+
+__main__ - ERROR - 2023-05-13 05:41:12,746 - Failed to run workflow due to error:
+Run (ID '88b315c3a1d74cfcbc12d3416385204e') failed
+__main__ - ERROR - 2023-05-13 05:41:12,754 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '88b315c3a1d74cfcbc12d3416385204e') failed
+
+__main__ - ERROR - 2023-05-13 06:02:08,490 - Failed to run workflow due to error:
+Run (ID '8bbb9064c3f64631aeb295afadf0f13b') failed
+__main__ - ERROR - 2023-05-13 06:02:08,492 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '8bbb9064c3f64631aeb295afadf0f13b') failed
+
+__main__ - ERROR - 2023-05-13 06:24:11,102 - Failed to run workflow due to error:
+Run (ID '9d42603fc43041d99bd9b160ac36e792') failed
+__main__ - ERROR - 2023-05-13 06:24:11,105 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '9d42603fc43041d99bd9b160ac36e792') failed
+
+__main__ - ERROR - 2023-05-13 06:50:25,778 - Failed to run workflow due to error:
+Run (ID '5695b33b89f841b3b93dd41e2d3ceff7') failed
+__main__ - ERROR - 2023-05-13 06:50:25,780 - Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    workflow()
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "main.py", line 26, in workflow
+    _run("train")
+  File "main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 307, in run
+    _wait_for(submitted_run_obj)
+  File "/home/hime_chan/miniconda3/envs/mlflow-60d5736081b1ea1d5b22114f88fc1ae0fc06b6cc/lib/python3.7/site-packages/mlflow/projects/__init__.py", line 324, in _wait_for
+    raise ExecutionException("Run (ID '%s') failed" % run_id)
+mlflow.exceptions.ExecutionException: Run (ID '5695b33b89f841b3b93dd41e2d3ceff7') failed
+

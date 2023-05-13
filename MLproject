@@ -1,0 +1,17 @@
+name: mlflow_example
+
+conda_env: conda.yaml
+
+entry_points:
+
+  load_raw_data:
+    command: "python preprocess.py"
+    
+  train:
+    command: "python train.py"
+
+  test:
+    command: "pytest test.py"
+
+  main:
+    command: "python main.py"
