@@ -1,0 +1,16 @@
+pip install -r requirements.txt
+apt install graphviz -y
+source ~/miniconda/bin/activate
+conda env create --name ml-pipeline --file=conda.yaml
+conda activate ml-pipeline
+mlflow run .
+export MLFLOW_TRACKING_URI=http://localhost:5000
+mlflow ui --host 0.0.0.0 --port 5000
+
+
+  test:
+    command: "pytest test.py"
+    
+    
+#  load_raw_data:
+#    command: "python preprocess.py"
