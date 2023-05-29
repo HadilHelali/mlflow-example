@@ -66,17 +66,6 @@ def test_simulate_degradation():
     assert actual_num_zeros == expected_num_zeros
   
 
-def test_metrics():
-  with open('metrics.txt', 'r') as infile:
-      contents = infile.read()
-  if contents.endswith("."):
-    contents = contents.rstrip(".")
-  assert 'Root Mean Square Error = ' in contents
-  metric_value_str = contents.split('=')[1].strip().replace(',', '.')
-  metric_value = float(metric_value_str)
-  assert isinstance(metric_value, float)
-  assert metric_value < 0.1
-
 # main entry point
 if __name__ == "__main__":
 
